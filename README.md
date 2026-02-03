@@ -1,1 +1,70 @@
-# CultureSpecificMarketing
+AI-Powered Marketing Strategy Generator
+A comprehensive web application that helps startups and small businesses create personalized marketing strategies using AI and cultural intelligence.
+
+Features
+Multi-step Business Information Collection: Intuitive form to gather business details, target audience, and goals
+Cultural Intelligence Analysis: AI-powered analysis of target audience preferences and behaviors
+Comprehensive Strategy Generation: Brand messaging, content calendars, channel recommendations, and ad scripts
+Professional Dashboard: Clean, responsive interface with export capabilities
+AI Integration
+OpenAI GPT-4
+Generates cultural taste profiles based on business information
+Creates comprehensive marketing strategies with actionable recommendations
+Produces platform-specific content calendars and ad scripts
+Qloo API
+Provides cultural intelligence data for enhanced audience analysis
+Maps cultural preferences to optimal marketing channels
+Identifies trending content formats relevant to target demographics
+Setup Instructions
+1. Get API Keys
+OpenAI API Key:
+
+Visit OpenAI Platform
+Create an account or sign in
+Generate a new API key
+Copy the key for use in your .env file
+Qloo API Key :
+
+Visit Qloo Developers
+Sign up for an account
+Request API access
+Copy the key for use in your .env file
+2. Configure Environment Variables
+Update the .env file in the project root:
+
+VITE_OPENAI_API_KEY=your_actual_openai_api_key_here
+VITE_QLOO_API_KEY=your_actual_qloo_api_key_here
+3. Run the Application
+npm run dev
+How It Works
+Business Information Collection: Users fill out a multi-step form with their business details, target audience, and marketing goals.
+
+Cultural Analysis: The system analyzes the target audience using Qloo's cultural intelligence API and GPT-4 to generate detailed taste profiles.
+
+Strategy Generation: GPT-4 creates comprehensive marketing strategies including:
+
+Brand messaging and taglines
+6-week content calendars
+Channel recommendations with budget allocations
+Influencer collaboration strategies
+Platform-specific ad scripts
+Results Dashboard: Users receive a comprehensive strategy report with actionable recommendations, copy-to-clipboard functionality, and export options.
+
+API Integration Details
+OpenAI Integration
+Uses GPT-4 for both cultural analysis and strategy generation
+Implements structured prompts for consistent, actionable output
+Qloo Integration
+Provides enhanced cultural intelligence
+Maps cultural data to marketing recommendations
+Security Notes
+API keys are stored in environment variables
+Client-side API calls are used for demo purposes
+In production, consider moving API calls to a secure backend
+Never commit API keys to version control
+Technologies Used
+Frontend: React, TypeScript, Tailwind CSS
+AI Services: OpenAI GPT-4, Qloo API
+HTTP Client: Axios
+Icons: Lucide React
+Build Tool: Vite
